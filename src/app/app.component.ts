@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipes';
+
+  selectedFeature: string = "recipes";
+
+  setTab(event: string){
+    this.selectedFeature = event;
+  }
 }
